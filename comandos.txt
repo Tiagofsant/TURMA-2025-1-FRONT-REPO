@@ -6,5 +6,8 @@ git push   <--- envia os dados para o github.
 
 git pull <--- trazer os dados do repositorio para usa maquina 
 
+git clone <-- clona um projeto de terceiro ou pessoal na sua pasta do computador
+que você selecionou
+
 
 
