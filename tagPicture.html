@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apredendo sobre a tag Picture</title>
+  </head>
+  <body>
+    <h2><a href="/">Voltar ao Início</a></h2>
+    <hr />
+
+    <picture>
+      <source media="(min-width: 1200px)" srcset="/imagens/ferrari.jpeg" />
+
+      <source media="(min-width: 600px)" srcset="/imagens/lamborguini.jpeg" />
+
+      <img
+        src="/imagens/mclaren.jpeg"
+        alt="Foto carro Mclaren"
+        width="100%"
+        height="100%"
+      />
+    </picture>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML SEMANTICO</title>
+  </head>
+  <body>
+
+    <h2><a href="/">Voltar ao Início</a></h2>
+    <hr />
+
+     <!-- figure: trabalha juntamente com a figcaption -->
+     <!-- figcaption: Te trará uma legenda da imagem -->
+     <!-- alt: só mostrará a sua escrita quando a imagem nao for encontrada -->
+     <!-- main: mostra que o bloco de codigo que ele envolve é o principal (mecanismos de busca) -->
+     <!-- header: cabeça do site -->
+     <!-- footer: rodapé do site -->
+     <!-- section: seções do site. -->
+     <!-- article: mini seções contidas dentro de uma seção -->
+     <!-- nav: barra de navegação do site -->
+     <!-- aside: barra lateral do site (normalmete fixa) -->
+     <!-- time: ajuda os mecanismos de busca verem as horas melhor -->
+             
+    <section id="Exemplo1">
+      <article>
+        <h4>Data para mecanismos de busca</h4>
+        <p>
+          A data de hoje é
+          <time datetime="2025-02-22"> 22 de fevereiro de 2025 </time>
+        </p>
+      </article>
+
+      <article>
+        <figure>
+            <img src="/imagens/mclaren.jpeg" alt="MacLaren" height="200" width="250" />
+            <figcaption>Carro - MacLaren</figcaption>
+        </figure>
+      </article>
+    </section>
+
+   <main id="EXEMPLO_SECAO_PRINCIPAL">
+    <section id="Exemplo 2">
+        <article>
+          <h4>Data para mecanismos de busca</h4>
+          <p>
+            A data de hoje é
+            <time datetime="2025-02-22"> 22 de fevereiro de 2025 </time>
+          </p>
+        </article>
+        
+        <article>
+          <figure>
+              <img src="/imagens/mclaren.jpeg" alt="MacLaren" height="200" width="250" />
+              <figcaption>Carro - MacLaren</figcaption>
+          </figure>
+        </article>
+      </section>
+    </main>
+</html>

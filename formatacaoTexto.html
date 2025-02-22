@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tags de formatação de texto</title>
+  </head>
+  <body>
+    <h2><a href="/">Voltar ao Início</a></h2>
+    <hr />
+
+    <div id="conhecendo_o_samp">
+      <p><samp>Arquivo não encontrado. Pressione F1 para continuar</samp></p>
+      <p>Arquivo não encontrado. Pressione F1 para continuar</p>
+    </div>
+
+    <div id="conhecendo_o_kbd">
+      <p>Para salvar este documento, pressione: <kbd>Ctrl + S</kbd></p>
+      <p>Para identar o código fonte, pressione: <kbd>Ctrl + Shift + F</kbd></p>
+    </div>
+
+    <div id="conhecendo_o_code">
+      <!-- quando eu coloco o code sem o pre ele fica horizontal -->
+      <!-- prettier-ignore -->
+      <code> 
+        x = 5; 
+        y = 6; 
+        soma = x + y; 
+      </code>
+
+      <pre>
+        <code>
+            x = 5;
+            y = 6;
+        
+            soma = x + y;
+        </code>
+    </pre>
+    </div>
+
+    <div id="conhecendo_o_var">
+      <!-- muito usado para diferenciar formulas matemáticas dos textos convecionais -->
+      <p>
+        A área do triângulo é 1/2 x <var>b</var> x <var>a</var>, onde
+        <var>b</var> é a base e <var>a</var> é a altura
+      </p>
+    </div>
+  </body>
+</html>
