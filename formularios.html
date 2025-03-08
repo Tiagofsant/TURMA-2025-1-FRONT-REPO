@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulários</title>
+  </head>
+  <body>
+    <div>
+      <h3>Selecione os veículos que você tem</h3>
+
+      <!-- O ATRIBUTO NOVALIDADE, desabilita a função de validação do formulario, ou seja, por exemplo,
+        se eu colocar letras no campo de telefone que só aceita numeros, ele vai deixar passar. -->
+
+      <form action="/cadastrarFormulario.js" novalidate>
+        <pre>
+      <input type="checkbox" id="carro" name="carro" value="carro" />
+      <label>Eu tenho um carro</label>
+
+      <input
+        type="checkbox"
+        id="bicicleta"
+        name="bicicleta"
+        value="bicicleta"
+      />
+      <label>Eu tenho uma bicicleta</label>
+
+      <input type="checkbox" id="barco" name="barco" value="barco" />
+      <label>Eu tenho um barco</label>
+
+      <input type="checkbox" id="jetski" name="jetski" value="jetski" />
+      <label>Eu tenho um jetski</label>
+
+      <input type="checkbox" id="caminhão" name="caminhão" value="caminhão" />
+      <label>Eu tenho um caminhão</label>
+
+      <input
+        type="checkbox"
+        id="motocicleta"
+        name="motocicleta"
+        value="motocicleta"
+      />
+      <label>Eu tenho uma motocicleta</label>
+
+      <input type="submit" value="Enviar Formulário" />
+    </pre>
+      </form>
+    </div>
+
+    <!-- LINKS DE REFERENCIA DOS TYPES DO INPUT: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input -->
+
+    <!-- METODOS GET DEVEM SER USADO SOMENTE PARA ENVIOS DE FORMULARIOS QUE NAO TENHAM 
+        DADOS SIGILOSOS COMO SENHAS E ETC, POIS ESSE METODO MANDA OS DADOS NO CORPO DA URL,
+        DEIXANDO EXPOSTO, PRA RESOLVER ISSO USE O METODO POST -->
+
+    <!-- o autocomplete quando tiver off, ele nao autocompletará o seu formulário.
+        por padrao ele vem on então so chame-o quando quiser deixar desabilitado essa função -->
+
+    <div>
+      <h3>CADASTRAR INFORMAÇÕES DO USUÁRIO</h3>
+
+      <form
+        action="/cadastrarUsuario.js"
+        target="_blank"
+        method="POST"
+        autocomplete="off"
+      >
+        <pre>
+      <label>Nome</label>
+      <input type="text" id="Nome" name="Nome" placeholder="Digite seu nome" required />
+
+      <label>Sobrenome</label>
+      <input type="text" id="Sobrenome" name="Sobrenome" placeholder="Digite seu sobrenome" required />
+
+      <label>Email</label>
+      <input type="text" id="Email" name="Email" placeholder="Digite seu email" required/>
+
+      <label>Senha</label>
+      <input type="password" id="Senha" name="Senha" placeholder="Digite sua Senha" required/>
+
+      <label>Telefone</label>
+      <input type="phone" id="Telefone" name="Telefone" placeholder="Digite seu telefone" required />
+
+      <label>CPF</label>
+      <input type="text" id="CPF" name="CPF" placeholder="Digite seu CPF" />
+
+      <label>RG</label>
+      <input type="text" id="RG" name="RG" placeholder="Digite seu RG" />
+
+      <label>Data Agendamento</label>
+      <input
+        type="date"
+        id="Agendamento"
+        name="Agendamento"
+        placeholder="Selecione a data"
+      />
+
+      <label>Hora Agendamento</label>
+      <input
+        type="time"
+        id="Agendamento"
+        name="Agendamento"
+        placeholder="Selecione a hora"
+      />
+
+      <label>Foto de Perfil</label>
+      <input
+        type="file"
+        id="FotoPerfil"
+        name="FotoPerfil"
+        placeholder="Selecione a sua Foto de Perfil"
+        accept="image/png, image/jpg"
+      />
+
+      <label>Certidão de nascimento</label>
+      <input
+        type="file"
+        id="nascimento"
+        name="nascimento"
+        placeholder="Envie sua certidão de nascimento"
+        accept="application/pdf"
+      />
+
+      <input type="submit" value="Cadastrar Usuário" />
+      <input type="reset" value="Limpar Tudo" />
+    </pre>
+      </form>
+    </div>
+  </body>
+</html>
