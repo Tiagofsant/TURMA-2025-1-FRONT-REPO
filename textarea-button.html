@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TextArea e Button</title>
+  </head>
+  <body>
+    <h2>TextArea</h2>
+
+    <form action="enviarMensagem.js">
+      <label>Escreva sua redação abaixo</label>
+
+      <br />
+      <textarea
+        placeholder="Escreva sua mensagem aqui"
+        style="width: 300px; height: 300px"
+      ></textarea>
+    </form>
+
+    <!-- NORMALMENTE OS BOTÕES SÃO USADOS PARA EXECUTAR JAVASCRIPT. NO FORMULARIO É RECOMENDADO USAR 
+    O PROPRO INPUT DO TIPO SUBMIT, POIS ELE JA ESTA CONFIGURADO PARA ENVIAR DE FORMA CORRETA OS DADOS.
+
+    LEMBRANDO. O INPUT SUBMIT SÓ FUNCIONA DENTRO DA TAG FORM, CASO CONTRARIO USE A TAG BUTTON. -->
+    <h2>Botões</h2>
+
+    <button onclick="alert('Clicou em mim')">Teste de Clique de botão</button>
+  </body>
+</html>

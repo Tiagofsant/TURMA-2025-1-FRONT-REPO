@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Datalist VS Select</title>
+  </head>
+  <body>
+    <!--   
+O DATALIST É UMA LISTA DE AJUDA PARA SEU USUARIO COMPLETAR O PREENCHIMENTO DO CAMPO 
+MAIS RAPIDAMENTE, ELE PODE ESCREVER QUALQUER COISA QUE ESTÁ DA LISTA, POIS ESTA LISTA É SÓ
+PARA AJUDA 
+
+O SELECT DIFERENTEMENTE DO DATALIST, OBRIGA O USUARIO ESCOLHER UMA DAS OPÇOES LISTADAS 
+E NÃO PERMITE ELE ESCREVER. 
+-->
+
+    <h2>DATALIST</h2>
+
+    <form action="/cadastrarFormualario.js" id="marcas-carros">
+      <label for="datalist-marcas-carros" name="datalist-marcas-carros"
+        >Escolha sua marca de carros preferida</label
+      >
+
+      <input list="datalist-marcas-carros" name="datalist-marcas-carros" />
+      <datalist id="datalist-marcas-carros" name="datalist-marcas-carros">
+        <option value="Ford"></option>
+        <option value="Chevrolet"></option>
+        <option value="Volkswagen"></option>
+        <option value="Nissan"></option>
+        <option value="Hyundai"></option>
+        <option value="Kia"></option>
+        <option value="Peugeot"></option>
+        <option value="Renault"></option>
+        <option value="Subaru"></option>
+        <option value="Mazda"></option>
+        <option value="Jeep"></option>
+        <option value="Volvo"></option>
+        <option value="Porsche"></option>
+        <option value="Jaguar"></option>
+        <option value="Land Rover"></option>
+        <option value="Tesla"></option>
+        <option value="Mitsubishi"></option>
+        <option value="Chery"></option>
+        <option value="Dodge"></option>
+        <option value="Lexus"></option>
+        <option value="Ferrari"></option>
+        <option value="Lamborghini"></option>
+        <option value="Bugatti"></option>
+        <option value="Aston Martin"></option>
+        <option value="Alfa Romeo"></option>
+      </datalist>
+
+      <h2>SELECT</h2>
+
+      <select id="select-marcas" name="select-marcas">
+        <option value="">-- Selecione uma opção --</option>
+        <option value="Ford">Ford</option>
+        <option value="Chevrolet">Chevrolet</option>
+        <option value="Volkswagen">Volkswagen</option>
+        <option value="Nissan">Nissan</option>
+        <option value="Hyundai">Hyundai</option>
+        <option value="Kia">Kia</option>
+        <option value="Peugeot">Peugeot</option>
+        <option value="Renault">Renault</option>
+        <option value="Subaru">Subaru</option>
+        <option value="Mazda">Mazda</option>
+        <option value="Jeep">Jeep</option>
+        <option value="Volvo">Volvo</option>
+        <option value="Porsche">Porsche</option>
+        <option value="Jaguar">Jaguar</option>
+        <option value="Land Rover">Land Rover</option>
+        <option value="Tesla">Tesla</option>
+        <option value="Mitsubishi">Mitsubishi</option>
+        <option value="Chery">Chery</option>
+        <option value="Dodge">Dodge</option>
+        <option value="Lexus">Lexus</option>
+        <option value="Ferrari">Ferrari</option>
+        <option value="Lamborghini">Lamborghini</option>
+        <option value="Bugatti">Bugatti</option>
+        <option value="Aston Martin">Aston Martin</option>
+        <option value="Alfa Romeo">Alfa Romeo</option>
+      </select>
+
+      <br />
+      <br />
+
+      <input type="submit" value="Cadastrar" />
+    </form>
+  </body>
+</html>

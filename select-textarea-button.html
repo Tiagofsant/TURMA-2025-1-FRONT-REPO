@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selects de Formulário</title>
+  </head>
+  <body>
+    <!-- AQUI EU ESTOU USANDO 3 FORMS DIFERENTES POR QUE EU TENHO 
+     2 BOTÕES (LIMPAR TUDO E ENVIAR PARA SELECT) -->
+    <h2>Lista com seleções - 3 Formularios</h2>
+
+    <pre>
+    <form action="/cadastrarCarro.js" id="cadastra-carros">
+      <label for="carros" name="carros" size="2"
+        >Escolha uma marca de Carro</label
+      >
+
+      <!-- OS VALUES INDIFEREM DO NOME DA OPÇÃO, VOCE DEVE COLOCAR O IDENTIFICADOR DESSA LINHA,
+      QUE É O QUE O BACKEND IRÁ ESPERAR, ALINHE COM ELE SE ELE QUER ID, NOME OU ALGO DO TIPO -->
+
+      <!-- O EXEMPLO ABAIXO É COM O ID DA LINHA -->
+      <select id="carros" name="carros">
+        <option value="">Selecione uma marca</option>
+        <option value="1">Honda</option>
+        <option value="2">Toyota</option>
+        <option value="3">BMW</option>
+        <option value="4">Mercedes-Benz</option>
+        <option value="5">Fiat</option>
+      </select>
+
+      <input type="submit" value="Enviar Formulário" />
+      <input type="reset" value="Limpar Tudo" />
+    </form>
+
+    <form action="/cadastrarFruta.js" id="cadastra-frutas">
+      <label for="frutas" name="frutas" size="2">Escolha uma fruta</label>
+
+      <!-- O EXEMPLO ABAIXO É COM O NOME DA LINHA -->
+      <select id="frutas" name="frutas" size="5">
+        <option value="">Selecione uma fruta</option>
+        <option value="banana">Banana</option>
+        <option value="maca">Maça</option>
+        <option value="pera">Pera</option>
+        <option value="melao">Melão</option>
+        <option value="melancia">Melancia</option>
+      </select>
+
+      <input type="submit" value="Enviar Formulário" />
+      <input type="reset" value="Limpar Tudo" />
+    </form>
+
+    <form action="/cadastrarMotos.js" id="cadastra-motos">
+      <label for="motos" name="motos" size="2"
+        >Escolha as motos para envio</label
+      >
+
+      <select id="motos" name="motos" multiple>
+        <option value="">Selecione uma marca</option>
+        <option value="1">BMW 1250gs</option>
+        <option value="2">Ducatti Panligale 1200</option>
+        <option value="3">BMW S1000RR</option>
+        <option value="4">Honda BROS 160</option>
+        <option value="5">Yamaha Lander 250</option>
+      </select>
+
+      <input type="submit" value="Enviar Formulário" />
+      <input type="reset" value="Limpar Tudo" />
+    </form>
+
+    <!-- 
+    AQUI EU ESTOU USANDO A MESMA ESRTURA, MAS COMO TENHO SOMENTE UM BOTÃO ENVIAR E LIMPAR TUDO,
+    POSSO COLOCA-LOS NO MESMO FORMULARIO (É O RECOMENDADO) -->
+    <h2>Lista com seleções - 1 Formulario </h2>
+
+    <form action="/cadastrarFormualario.js" id="formulario-de-carros-frutas-e-motos">
+        <label for="carros" name="carros" size="2"
+          >Escolha uma marca de Carro</label
+        >
+        <select id="carros" name="carros">
+          <option value="">Selecione uma marca</option>
+          <option value="1">Honda</option>
+          <option value="2">Toyota</option>
+          <option value="3">BMW</option>
+          <option value="4">Mercedes-Benz</option>
+          <option value="5">Fiat</option>
+        </select>
+  
+        <label for="frutas" name="frutas" size="2">Escolha uma fruta</label>
+  
+        <!-- SIZE É A QUANTIDADE DE LINHAS QUE E É ABERTO PARA MOSTRAR AO USUARIO COMO PADRAO -->
+        <select id="frutas" name="frutas" size="5">
+          <option value="">Selecione uma fruta</option>
+          <option value="banana">Banana</option>
+          <option value="maca">Maça</option>
+          <option value="pera">Pera</option>
+          <option value="melao">Melão</option>
+          <option value="melancia">Melancia</option>
+        </select>
+  
+        <label for="motos" name="motos" size="2"
+          >Escolha as motos para envio</label
+        >
+  
+        <!-- O MULTIPLO IRÁ ENVIAR OS VALUES DE TODOS AS OPÇOES QUE VOCE SELECIONAR (ARRAY)
+        PARA EU SELECIONAR, POSSO ARRASTAR O MOUISE, APERTAR CONTRA E SELECIONAR AS OPÇÕES OU SHIFT -->
+
+        <select id="motos" name="motos" multiple>
+          <option value="">Selecione uma marca</option>
+          <option value="1">BMW 1250gs</option>
+          <option value="2">Ducatti Panligale 1200</option>
+          <option value="3">BMW S1000RR</option>
+          <option value="4">Honda BROS 160</option>
+          <option value="5">Yamaha Lander 250</option>
+        </select>
+   
+        <input type="submit" value="Enviar Formulário" />
+        <input type="reset" value="Limpar Tudo" />
+    </form>
+</pre>
+  </body>
+</html>

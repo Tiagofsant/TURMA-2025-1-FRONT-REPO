@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multimidias (audio e video)</title>
+  </head>
+  <body>
+    <!-- 
+        autoplay: roda o video automaticamente quando acessa o site
+        controls: ativa os controladores do video
+        muted: deixa o video mutado
+        loop: deixa o video rodando em loop infito 
+
+         width: define a largura do video
+         height: defini a altura do video
+
+    -->
+
+    <!-- 
+        POR FAVOR! NÃO DEIXE O VIDEO E O AUDIO COM O MUTED DESATIVADO
+        NINGUEM MERECE ENTRAR NUM SITE E TOMAR UM SUSTO COM MUSICA 
+    -->
+
+    <video width="650" height="400" autoplay controls muted loop>
+      <source src="/videos/hackingCoding.mp4" type="video/mp4" />
+      <source src="" type="video/ogg" />
+      <source src="" type="video/mpeg" />
+
+      <!-- 
+      esta mensagem só irá aparecer quando o navegador nao conseguir reproduzir nenhum video 
+      explicitado acima, ou quando o navegador nao for compativel 
+      -->
+
+      Este vídeo não é compativel com o seu navegador. Procure usar o Google
+      Chrome ou similares.
+    </video>
+
+    <video width="250" height="450" autoplay controls muted>
+      <source src="/videos/teclado.mp4" type="video/mp4" />
+      <source src="" type="video/ogg" />
+      <source src="" type="video/mpeg" />
+      Este vídeo não é compativel com o seu navegador. Procure usar o Google
+      Chrome ou similares.
+    </video>
+
+    <audio controls>
+      <source src="/audios/amor-e-fe.mp3" type="audio/mp3" />
+
+      <!-- 
+      no caso como o src está vazio, se o navegaor precisar desses tipos explicitados, 
+      ele nao irá rodar 
+      -->
+      <source src="" type="audio/acc" />
+      <source src="" type="audio/wma" />
+      Este audio não é compativel com o seu navegador. Procure usar o Google
+      Chrome ou similares.
+    </audio>
+
+    <audio controls>
+      <source src="/audios/do-job.mp3" type="audio/mp3" />
+
+      <!-- 
+        no caso como o src está vazio, se o navegaor precisar desses tipos explicitados, 
+        ele nao irá rodar 
+        -->
+      <source src="" type="audio/acc" />
+      <source src="" type="audio/wma" />
+      Este audio não é compativel com o seu navegador. Procure usar o Google
+      Chrome ou similares.
+    </audio>
+  </body>
+</html>

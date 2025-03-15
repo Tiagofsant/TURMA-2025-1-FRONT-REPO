@@ -6,14 +6,14 @@
     <title>Formulários</title>
   </head>
   <body>
-    <div>
-      <h3>Selecione os veículos que você tem</h3>
+    <!-- <pre>
+    <div> -->
+    <h3>Selecione os veículos que você tem</h3>
 
-      <!-- O ATRIBUTO NOVALIDADE, desabilita a função de validação do formulario, ou seja, por exemplo,
+    <!-- O ATRIBUTO NOVALIDADE, desabilita a função de validação do formulario, ou seja, por exemplo,
         se eu colocar letras no campo de telefone que só aceita numeros, ele vai deixar passar. -->
 
-      <form action="/cadastrarFormulario.js" novalidate>
-        <pre>
+    <form action="/cadastrarFormulario.js" novalidate>
       <input type="checkbox" id="carro" name="carro" value="carro" />
       <label>Eu tenho um carro</label>
 
@@ -124,6 +124,214 @@
       <input type="submit" value="Cadastrar Usuário" />
       <input type="reset" value="Limpar Tudo" />
     </pre>
+    </div>
+
+    <div>
+      <h2>Fieldset e Legend</h2>
+
+      <!-- enquanto nao sabemos css, podemos quebrar as linhas usando o <pre> ou o <br> -->
+      <!-- 
+        o <br> é mais trabalhoso, porem voce tem mais controle, ja o <pre> voce perde a identação do seu codigo onde ele
+        é aplicado -->
+
+      <form action="enviarformulario.js">
+        <fieldset>
+          <legend>Dados Pessoais Yuri</legend>
+
+          <label for="fnome">Nome:</label>
+          <input
+            type="text"
+            id="nome"
+            name="fnome"
+            placeholder="Digite seu nome aqui"
+          />
+
+          <br />
+          <br />
+
+          <label for="fsobrenome">Sobrenome:</label>
+          <input
+            type="text"
+            id="sobrenome"
+            name="fsobrenome"
+            placeholder="Digite seu sobrenome aqui"
+          />
+
+          <br />
+          <br />
+
+          <label for="fidade">Telefone:</label>
+          <input
+            type="phone"
+            id="Telefone"
+            name="fidade"
+            placeholder="Digite seu telefone aqui"
+          />
+
+          <br />
+          <br />
+
+          <label for="fidade">Quantos anos voce tem?</label>
+          <input
+            type="number"
+            id="idade"
+            name="fidade"
+            placeholder="Digite sua idade aqui"
+          />
+
+          <br />
+          <br />
+
+          <label for="fdescricao">Descrição</label>
+          <input
+            type="text"
+            id="descricao"
+            name="fdescricao"
+            placeholder="Digite sua Descrição aqui"
+            readonly
+          />
+
+          <br />
+          <br />
+
+          <label for="fdescricao">Descrição com autofocus</label>
+          <input
+            type="text"
+            id="descricao"
+            name="fdescricao"
+            placeholder="Digite sua Descrição aqui"
+            autofocus
+          />
+
+          <br />
+          <br />
+
+          <label for="fdescricao"
+            >Descrição com limitação do comprimento do campo</label
+          >
+          <input
+            id="descricao"
+            name="fdescricao"
+            placeholder="Digite sua Descrição aqui"
+            type="text"
+            size="40"
+          />
+
+          <br />
+          <br />
+
+          <label for="data-anterior"
+            >Selecione uma data inferior a 01/01/1980</label
+          >
+          <input
+            id="data-anterior"
+            name="fdata-anterior"
+            type="date"
+            max="1980-01-01"
+          />
+
+          <br />
+          <br />
+
+          <label for="data-posterior"
+            >Selecione uma data posterior a 01/01/2025</label
+          >
+          <input
+            id="data-posterior"
+            name="fdata-posterior"
+            type="date"
+            min="2025-01-01"
+          />
+
+          <br />
+          <br />
+
+          <label for="data-range"
+            >Selecione uma data entre 01/01/2024 a 31/12/2025</label
+          >
+          <input
+            id="data-range"
+            name="fdata-range"
+            type="date"
+            min="2024-01-01"
+            max="2025-12-31"
+          />
+
+          <br />
+          <br />
+
+          <label for="numero-menor">Selecione um numero menor que 10</label>
+          <input
+            id="numero-menor"
+            name="fnumero-menor"
+            type="number"
+            max="10"
+          />
+
+          <br />
+          <br />
+
+          <label for="numero-maior-50">Selecione um numero maior que 50</label>
+          <input
+            id="data-maior-50"
+            name="fdata-posterior"
+            type="number"
+            min="50"
+          />
+
+          <br />
+          <br />
+
+          <label for="numero-range">Selecione um numero entre 50 a 70</label>
+          <input
+            id="numero-range"
+            name="numero-range"
+            type="number"
+            min="50"
+            max="70"
+          />
+
+          <br />
+          <br />
+
+          <label for="telefone">Numero de telefone com REGEX</label>
+          <input
+            id="telefone"
+            name="telefone"
+            type="tel"
+            pattern="\(\d{2}\) 9\d{4}-\d{4}"
+            title="Favor seguir esta estrutura: (00) 90000-0000"
+            placeholder="(00) 90000-0000"
+          />
+
+          <br />
+          <br />
+
+          <label for="telefone">Numeros com Intervalos - multiplos</label>
+          <input id="intervalo" name="intervalo" type="number" step="50" />
+
+          <br />
+          <br />
+
+          <!-- esses botoes devem estar sempre dentro do form, pois se nao tiverem não irão funcionar, pois 
+            eles nao sabem que formulario devem aplicar os comandos -->
+
+          <input type="submit" value="Enviar desabilitado" disabled />
+
+          <input type="submit" value="Enviar" />
+          <input type="reset" value="Limpar Tudo" />
+
+          <br />
+          <br />
+
+          <input
+            type="image"
+            src="https://thumbs.dreamstime.com/b/submit-word-round-red-button-16243334.jpg"
+            alt="Imagem de submit"
+            width="80"
+            height="80"
+          />
+        </fieldset>
       </form>
     </div>
   </body>
