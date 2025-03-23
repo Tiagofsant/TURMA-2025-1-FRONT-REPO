@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Primeiro Estilo CSS</title>
+
+    <!-- aqui temos 2 conflitos - os 2 estilos estão fazendo a mesma coisa, 
+    o primeiro fica verde alinhado pra direita 
+    e o segundo fica vermelho centralizado. 
+
+    por padrao o html sempre dara prioridade ao ultimo que foi execultado
+    que neste caso é o batatafrita.css, deixando o h1 em vermelho centralizado -->
+
+    <!-- o nome do arquivo css fica ao seu critério, porem por convenção 
+    colocamos styles.css -->
+
+    <!-- esta forma abaixo com a tag link é o mais recomendado, pois desta forma
+    eu posso separar o arqivo de estilos do css e usa-lo em diversos lugares -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="batataFrita.css" />
+
+    <!-- este cara é usado para isolar o css em uma unica pagina (nao recomendado) -->
+    <!-- <style>
+        h1 {
+            color: red;
+            text-align: center;
+        }
+    </style> -->
+  </head>
+  <body>
+    <h1>Olá, mundo!</h1>
+
+    <h1>Este é o meu Primeiro título em CSS</h1>
+
+    <!-- estilizar dessa forma é usado para testar algo rapido na aplicaçao e não 
+é recomendado para uso operacional -->
+
+    <!-- <h1 style="color: red; text-align: center">Olá, mundo!</h1>
+
+    <h1 style="color: red; text-align: center">
+      Este é o meu Primeiro título em CSS
+    </h1> -->
+  </body>
+</html>

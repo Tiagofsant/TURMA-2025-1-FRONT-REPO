@@ -1,0 +1,75 @@
+.centro {
+  color: red;
+  text-align: center;
+}
+
+.largo {
+  font-size: 300%;
+}
+
+.selva {
+  color: green;
+}
+
+/* criando um tailwind do zero - Simulador de tailwind */
+
+div {
+  width: 350px;
+  height: 350px;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.border-purple {
+  border-radius: 20px solid purple;
+}
+
+.bg-iceWhite {
+  background-color: #808080;
+}
+
+.rounded-md {
+  border-radius: 30px; /* Este vai deixar a borda arrendodada */
+}
+
+.p-2 {
+  /* padding: 10px; */
+  padding: 20px;
+}
+
+.mb-4 {
+  margin-bottom: /*40px*/ 60px;
+}
+
+/* 
+ddsfds
+
+f
+sdf
+sd
+f
+sdf
+sfd
+fd
+sf
+sd
+fs
+sd
+f
+sdd
+fsd
+f
+sf
+s
+df
+sdf
+sd
+fsd
+
+
+*/

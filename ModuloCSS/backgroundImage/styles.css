@@ -1,0 +1,31 @@
+/* 
+  por padrao ela vem repitindo a imagem, 
+  mas se quiser desabilitar use o no-repeat
+  repeate-x - repete só na horizontal
+  repeate-y - repete só na vetrtical
+  */
+
+/* body {
+  background-image: url("/imagens/lampada.png");
+  background-repeat: repeat-x;
+  background-size: contain;
+} */
+
+body {
+  background-image: url("/ModuloCSS/imagens/comida.jpg");
+  background-repeat: repeat-x;
+  background-size: cover;
+  color: bisque;
+  backdrop-filter: blur(5px);
+  margin: 20px;
+}
+
+.imagemDiv {
+  background-image: url("/ModuloCSS/imagens/montanha.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  color: white;
+  padding: 20px;
+}

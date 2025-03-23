@@ -1,0 +1,58 @@
+/* 
+seletor universal, ele vai estilizar todas as tags que ele 
+puder alcançar
+*/
+
+* {
+  background-color: black;
+  color: white;
+}
+
+/* 
+seletor por tag
+neste caso, todas as tags que estão com o estilo serão afetadas.
+*/
+
+h1 {
+  text-align: center;
+}
+
+/* 
+seletor por classe 
+só ira funcionar nas tags que tiverem a propriedade class=""
+que neste caso é a class="titulo";
+*/
+.titulo {
+  color: yellow;
+}
+
+/* 
+seletor por Id:
+que normalmente é utilizado com identificador unico.
+neste caso a tag button que tiver o id="botao" será afetada
+*/
+#botao {
+  background-color: yellow;
+  color: brown;
+  border-radius: 20px;
+}
+
+p {
+  text-align: justify;
+  color: brown;
+}
+
+.texto-centralizado {
+  text-align: center;
+}
+
+/* 
+seletor por tag e classe;
+desta forma eu posso isolar mais ainda e dizer que, neste caso, 
+somente a tag h2 que tem a classe texto-centralizado será afetada pelo 
+estilo, que neste caso, ficará azul.
+
+*/
+h2.texto-centralizado {
+  color: cyan;
+}

@@ -1,0 +1,83 @@
+div {
+  /* todas as divs terão essa configuração  */
+  width: 300px;
+  height: 300px;
+  background-color: blueviolet;
+  padding: 20px;
+  color: white;
+}
+
+/* a abreviada é a recomendanda */
+.borda-abreviada {
+  border-radius: 20px;
+  border: cyan 20px outset; /* aqui a ordem dos elementos não interfere */
+}
+
+.borda-normal {
+  border-style: outset;
+  border-width: 20px;
+  border-color: cyan;
+
+  border-radius: 20px;
+}
+
+.borda-multicor {
+  border-style: double;
+  border-width: 30px;
+  border-color: red green cyan yellow;
+}
+
+.borda-variosEstilos {
+  border-style: double dashed dotted groove;
+}
+
+.black {
+  background-color: #3d3c3c;
+}
+
+.item1 {
+  border-left: 10px solid red;
+}
+
+.item2 {
+  border-bottom: 10px solid red;
+}
+
+.item3 {
+  border-top: 10px solid red;
+}
+
+.item4 {
+  border-right: 10px solid red;
+}
+
+.item5 {
+  border-top: 10px solid red;
+}
+
+.item6 {
+  border-radius: 20px;
+}
+
+.texto-arredondado {
+  border-left: 10px double #c5c5c5;
+  border-radius: 800px;
+  padding: 20px;
+}
+
+/* PROPRIEADES DA BORDA 
+  /* border: tamanho estilo e cor; */
+/* border: 20px dotted cyan;  pontilhado  */
+/* border: 20px dashed cyan;  tracejado  */
+/* border: 20px solid cyan;  linha reta  */
+/* border: 20px double cyan;  linha dupla */
+/* border: 20px groove cyan;    3D */
+/* border: 20px ridge cyan;   3D Moldura */
+/* border: 20px inset cyan;   3D 1 linha */
+/* border: 20px outset cyan;  3D 1 linha */
+
+/* 
+ LINKS DE SITE DE CORES
+https://corhexa.com/ 
+
+*/
