@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+.item {
+  width: 300px;
+  height: 150px;
+  background-color: blueviolet;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.container {
+  height: 100vh;
+
+  display: flex; /* INVOCA O FLEX BOX */
+
+  gap: 0; /* ROW-GAP + COLUMN-GAP -> ESPAÇA OS FILHOS, POREM DEPENDE DA INVOCAÇÃO DO DISPLAY FLEX */
+
+  row-gap: 60px; /* ESPAÇA A LINHA  */
+
+  column-gap: 40px; /* ESPAÇA A COLUNA  */
+
+  flex-direction: row; /* PROP: COLUMN, ROW, COLUMN-REVERSE, ROW-REVERSE -> MOSTRA SE OS ELEMENTOS FICARAM */
+  /*EM HORIZONTAL OU VERTICAL */
+
+  flex-wrap: wrap; /* PROP: WRAP, NOWRAP, WRAP-REVERSE ->  QUANDO O ELEMENTO CHEGA NO LIMITE DA TELA ELE QUEBRA PRA LINHA DE BAIXO */
+
+  /* flex-flow: row wrap; */ /* ABREVIAÇÃO DO FLEX-DIRECTION E FLEX-WRAP */
+
+  justify-content: center; /* centraliza os elementos horizontalmente */
+
+  align-items: center; /* centraliza os elementos verticalmente */
+
+  /* align-items: stretch;*/ /*  esse cara só funciona se o heidth dos elementos que são atingido por ela for 0 ou não existir */
+  /* align-items: baseline;  */ /* ess cara vai redimensionar baseado na letra dentro dele */
+  align-content: center;
+}
+
+/* justify-content: center  para eixo horizontal    use este primeiro
+align-content: center para eixo vertical     se nao der certo, use este */
+
+
+.item-5 {
+  align-self: center; /* ESTE CARA ALNHA ELE MESMO  NESTE CASO VAI ALTERAR O ITEM 5 */
+}
