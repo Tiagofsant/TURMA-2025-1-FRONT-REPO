@@ -1,0 +1,33 @@
+h1 {
+  text-decoration: underline; /* especifica ao tipo da linha  */
+  text-decoration-color: red; /* especifica a cor da linha */
+  text-decoration-style: wavy; /* especifica o estilo da linha */
+}
+
+h2 {
+  text-decoration: line-through;
+  text-decoration-color: green;
+}
+
+h3 {
+  text-decoration: underline;
+  text-decoration-color: blue;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 5px; /* especifica a espessura da linha */
+}
+
+h4 {
+  text-decoration: underline overline;
+  text-decoration-color: purple;
+  text-decoration-style: double;
+}
+
+h5 {
+  text-decoration: underline overline aqua wavy 3px; /* CHAMADA DE FORMA ABREVIDADA */
+  /* TIPO, COR, ESTILO,  TAMAMHO  --> SEGUIR ESTA ORDEM */
+}
+
+.retirado-estilo-padrao {
+  text-decoration: none; /* aqui eu tiro o sublinhado do link */
+  color: inherit; /* tirei a cor do link do texto */
+}

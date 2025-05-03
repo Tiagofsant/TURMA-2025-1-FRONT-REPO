@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white; /* todos os textos terao por padrao a cor branca */
+}
+
+body {
+  background-color: gray; /* MUDA A COR DE TODO O CORPO DO HTML */
+}
+
+h2 {
+  text-align: center;
+  color: black;
+}
+
+p {
+  color: blue; /* MUDA A COR DO TEXTO */
+  background-color: white; /* MUDA A COR DE FUNDO DO TEXTO */
+
+  /* BONUS */ /* TODOS OS TEXTOS VOCE PODE TRANSFORMAR UM CONTAINER */
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/*  TODOS OS TEXTOS EU POSSO USAR ESTA ESTRUTURA, ELES TEM SUPORTE
+H1, H2, H3, H4, H5, H6, P, SPAN
+*/
+
+.container-alinhamento {
+  background-color: #d2d0d0;
+  padding: 20px;
+}
+
+.texto-esquerda {
+  text-align: left; /* esse é o padrao, ja vem alinhado a esquerda */
+}
+
+.texto-direita {
+  text-align: right;
+}
+
+.texto-centralizado {
+  text-align: center;
+}
+
+.texto-justificado {
+  text-align: justify;
+}
+
+
+
+.ultima-linha-esquerda {
+text-align-last: left; /* esse é o padrao, ja vem alinhado a esquerda */
+}
+
+
+.ultima-linha-direita {
+text-align-last: right;
+}
+
+.ultima-linha-centralizada {
+  text-align-last: center;
+
+}
+
+.ultima-linha-justiicada {
+  text-align-last: justify;
+
+}
+
+.texto-ao-contrario {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}

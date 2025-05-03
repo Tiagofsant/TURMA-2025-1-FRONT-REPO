@@ -1,0 +1,23 @@
+.img1 {
+  vertical-align: baseline;
+}
+
+.img2 {
+  vertical-align: text-top;
+}
+
+.img3 {
+  vertical-align: text-bottom;
+}
+
+.img4 {
+  vertical-align: sub;
+}
+
+.img5 {
+  vertical-align: super;
+}
+
+.img6 {
+  vertical-align: -180%;
+}

@@ -47,7 +47,6 @@ h1 {
 /* justify-content: center  para eixo horizontal    use este primeiro
 align-content: center para eixo vertical     se nao der certo, use este */
 
-
 .item-5 {
   align-self: center; /* ESTE CARA ALNHA ELE MESMO  NESTE CASO VAI ALTERAR O ITEM 5 */
 }

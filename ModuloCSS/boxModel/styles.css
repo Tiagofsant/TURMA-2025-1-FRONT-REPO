@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+  background-color: blueviolet;
+  width: 250px;
+  height: 250px;
+}
+
+
+.div1 {
+  margin-left: 20px; /*  redimensiona de dentro pra fora */
+  margin-top: 20px;
+  padding: 20px; /* redimensiona de fora para dentro */
+}
+
+.div2 {
+   margin: 40px 0px 30px 60px; /* superior, direita, baixo, esquerda 
+  /*  margin: 40px 20px;   /* superior/inferior, direita/esquerda */
+
+  padding: 20px 0px 0px 20px;
+
+
+  }
+
+.div-preta {
+  background-color: black;
+  width: 150px;
+  height: 150px;
+}
+
+/* 
+magin: redimensiona os 4 cantos
+margin-top: redimensiona somente em cima
+margin-bottom: redimensiona somente em baixo
+margin-right: redimensiona somente em direita
+margin-left: redimensiona somente em 
+
+
+padding: redimensiona os 4 cantos
+padding-top: redimensiona somente em cima
+padding-bottom: redimensiona somente em baixo
+padding-right: redimensiona somente em direita
+padding-left: redimensiona somente em esquerda
+
+*/
