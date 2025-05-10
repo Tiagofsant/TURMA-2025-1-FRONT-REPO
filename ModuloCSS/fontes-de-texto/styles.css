@@ -1,0 +1,60 @@
+section {
+  border: 5px solid blueviolet;
+  padding: 10px;
+  margin: 10px 0px;
+  border-radius: 10px;
+}
+
+.font-times {
+  font-family: "Times New Roman", Times, serif; /* nome da fonte */
+  font-style: italic; /* estilo da fonte */
+  font-size: 25px; /* tamanho da fonte */
+}
+
+.font-arial {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: oblique;
+  font-weight: bold; /* espessura da fonte: pode ser de 100 a 900, bold, bolder ou lighter */
+  font-size: 25px;
+}
+
+.font-monospace {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+}
+
+.font-monospace {
+  font: italic 400 25px bold "Courier New", Courier, monospace;
+}
+
+/* ordem da fonte abreviada: font-style, font-weight, font-size e nome da fonte */
+
+.font-abreviada {
+  font: italic 400 25px "Helvetica", Arial, sans-serif;
+}
+
+/* 
+    fonte vinda do google, documentado neste site:
+    https://fonts.google.com/selection?query=oswald
+ */
+
+.font-externa {
+  font-family: "Public Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500; /* range de 100 a 900  */
+  font-style: normal;
+}
+
+.font-sofia {
+  font-family: "Sofia", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+}
+
+.font-audiowide {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+}

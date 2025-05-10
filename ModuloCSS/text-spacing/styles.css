@@ -1,0 +1,38 @@
+section {
+  border: 5px solid blueviolet;
+  padding: 10px;
+  margin: 10px 0px;
+  border-radius: 10px;
+}
+
+p {
+  text-indent: 40px;     /* coloca um recuo de 40px no inicio de cada paragrafo */
+  text-align: justify;   /* justifica o texto */
+  line-height: 20px;     /* aplica um espacamento entre LINHAS de 20px */
+}
+
+.espaco-entre-letras {
+  letter-spacing: 10px;   /* aplica um espacamento entre LETRAS de 10px */
+}
+
+.espaco-entre-palavras {
+  word-spacing: 20px;    /* aplica um espacamento entre PALAVRAS de 20px */
+}
+
+.indent-none {
+  text-indent: 0;   /* zera o recuo no paragrafo */ 
+}
+
+
+.nowrap {
+white-space: nowrap;  /* bloqueia a quebra de linha, necessário rolar pra direita */
+}
+
+
+.pre {
+white-space: pre;  /* deixa o texto pre formatado, equivale a tag <pre> do html */
+}
+
+.normal {
+  white-space: normal;   /* padrão que ja vem no texto */
+}
