@@ -1,0 +1,38 @@
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+table,   /* tabela */
+th,         /* cabeçalho da tabela */
+td {
+  /* celula da tabela */
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  border-collapse: collapse; /* serve para mesclar as bordas */
+}
+
+th {
+  color: red;
+}
+
+table {
+  width: 100%;
+}
+
+tr:hover {
+  color: blue;
+}
+
+tr:nth-child(even) {
+  background-color: #c2c2c2;
+}
+
+.container-tabela {
+  width: 100%;
+  overflow: auto; /* faz com que a tabela possa rolar (la ele) para o lado */
+}
