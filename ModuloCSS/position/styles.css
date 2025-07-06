@@ -1,0 +1,57 @@
+   body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      height: 2000px;
+    }
+
+    .container {
+      position: relative;
+      margin: 50px;
+      padding: 20px;
+      border: 2px dashed #aaa;
+      height: 400px;
+      overflow: auto;
+      background: #f5f5f5;
+    }
+
+    .box {
+      width: 150px;
+      height: 80px;
+      color: #fff;
+      padding: 10px;
+      box-sizing: border-box;
+      font-weight: bold;
+    }
+
+    .static {
+      background: #4caf50;
+      position: static;
+    }
+
+    .relative {
+      background: #2196f3;
+      position: relative;
+      top: 20px;
+      left: 20px;
+    }
+
+    .absolute {
+      background: #ff5722;
+      position: absolute;
+      top: 50px;
+      left: 50px;
+    }
+
+    .fixed {
+      background: #9c27b0;
+      position: fixed;
+      top: 10px;
+      right: 10px;
+    }
+
+    .sticky {
+      background: #ff9800;
+      position: sticky;
+      top: 0;
+    }

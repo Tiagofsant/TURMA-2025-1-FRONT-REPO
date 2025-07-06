@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Combinadores</title>
+
+    <style>
+      div > p {
+        /* Seleciona todos os <p> que são filhos diretos de um <div> */
+        background-color: yellow;
+      }
+
+      div + p {
+        /* Seleciona o primeiro <p> que vem imediatamente após um <div> */
+        background-color: red;
+      }
+
+      div ~ p {
+        /* Seleciona os irmaos proximos da div */
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Seletores de Filhos</h1>
+
+    <p>Este é o paragrafo 1</p>
+
+    <div class="">
+      <p>Este é o paragrafo 2</p>
+      <p>Este é o paragrafo 3</p>
+      <!-- neste exemplo o article nao é filho direto do div, mas sim do paragrafo 3 - estamos usando ele só pra titulo de exemplo -->
+      <article>
+        <p>Este é o paragrafo 4</p>
+      </article>
+      <p>Este é o paragrafo 5</p>
+    </div>
+
+    <p>Este é o paragrafo 6</p>
+    <p>Este é o paragrafo 7</p>
+
+    <!-- aqui ele pergunta qual os paragrafos que estão no mesmo nivel do div, ou
+    seja, os paragrafos que estão depois do div, e vai marca-los -->
+    
+    <div class="">
+      <p>Este é o paragrafo 8</p>
+      <p>Este é o paragrafo 9</p>
+      <article>
+        <p>Este é o paragrafo 10</p>
+      </article>
+      <p>Este é o paragrafo 11</p>
+    </div>
+
+    <p>Este é o paragrafo 12</p>
+    <p>Este é o paragrafo 13</p>
+    <p>Este é o paragrafo 14</p>
+
+    <section>
+      <p>Este é o paragrafo 15</p>
+      <p>Este é o paragrafo 17</p>
+      <p>Este é o paragrafo 18</p>
+    </section>
+
+    <p>Este é o paragrafo 19</p>
+  </body>
+</html>

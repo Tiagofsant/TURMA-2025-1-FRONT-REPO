@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="rapaz.css" />
+    <title>Z-Index</title>
+
+    <!-- quanto mais o z-index é alto, mais o elemento fica em cima dos outros -->
+    <!-- use o postion absolute para que o z-index funcione corretamente -->
+    <style>
+      .caixa1 {
+        z-index: 1;
+        position: absolute;
+        background-color: lightgreen;
+        width: 400px;
+        height: 400px;
+        border: 2px solid black;
+        z-index: 2000;
+      }
+      .caixa2 {
+        z-index: 2;
+        position: absolute;
+        background-color: lightblue;
+        width: 200px;
+        height: 200px;
+        border: 2px solid black;
+        z-index: 3000;
+      }
+      .caixa3 {
+        z-index: 3;
+        position: relative;
+        background-color: lightcoral;
+        width: 600px;
+        height: 500px;
+        border: 2px solid black;
+        z-index: 1000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="caixa1">caixa1</div>
+    <div class="caixa2">caixa2</div>
+    <div class="caixa3">caixa3</div>
+  </body>
+</html>

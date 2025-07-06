@@ -1,0 +1,35 @@
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.caixa1 {
+  width: 600px;
+  height: 100px;
+  background-color: lightgreen;
+  overflow: auto; /* HABILITA AS BARRAS DE ROLAGEM SE NECESSARIO */
+}
+
+.caixa2 {
+  width: 600px;
+  height: 100px;
+  background-color: lightcoral;
+  overflow: hidden; /* DESABILITA AS BARRAS DE ROLAGEM */
+}
+
+.caixa4 {
+  width: 600px;
+  height: 100px;
+  background-color: lightblue;
+  white-space: nowrap; /* IMPEDIR QUE O TEXTO QUEBRE LINHA */
+  overflow-x: scroll; /* HABILITA A BARRA DE ROLAGEM HORIZONTAL */
+  /* overflow-y: scroll; /* HABILITA A BARRA DE ROLAGEM VERTICAL */
+}
+
+.caixa3 {
+  width: 600px;
+  height: 100px;
+  background-color: lightpink;
+  overflow: visible; /* vem como padrão */
+}

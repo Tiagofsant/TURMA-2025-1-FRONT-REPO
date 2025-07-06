@@ -1,0 +1,63 @@
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* para garantir bom funcionamento do link siga a ordem abaixo */
+
+a:link {
+  /* quando tiver href ele fica vermelho */
+  color: red;
+}
+
+a:visited {
+  /* quando ja visitou o link */
+  color: green;
+}
+
+a:hover {
+  /* cor padrao sem heref */
+  color: blue;
+}
+
+a:active {
+  /* quando clicar no link */
+  color: orange;
+}
+
+.caixa1 {
+  width: 200px;
+  height: 200px;
+  background-color: lightgray;
+  border: 1px solid black;
+  padding: 20px;
+}
+
+/* seleciona a classe caixa1 quando o mouse passa por cima */
+.caixa1:hover {
+  background-color: lightblue;
+}
+
+/* seleção de elementos especifico com classes compartilhadas + pseudo-classe */
+section.caixa1:hover {
+  border: 1px double black;
+  background-color: lightcoral;
+}
+
+.caixa2 {
+  width: 400px;
+  height: 400px;
+  overflow: auto;
+}
+
+/* o Q é as aspas duplas, neste caso eu posso usar as pseudo classes para 
+estiliza-lo como fiz neste exemplo, substituindo o "" por ** e "" por ''.
+Sem contas as demais mudanças
+*/
+q:lang(no) {
+  font-size: 50px;
+  color: seagreen;
+  font-weight: bold;
+  quotes: "**" "''";
+}
