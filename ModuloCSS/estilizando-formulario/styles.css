@@ -1,0 +1,105 @@
+* {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 16px;
+
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 30px;
+  text-align: center;
+  color: green;
+}
+
+.container {
+  background-color: whitesmoke;
+  padding: 20px;
+  border-radius: 5px;
+  border: 2px double black;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid black;
+  resize: 16px;
+  border-radius: 4px;
+}
+
+select {
+  cursor: pointer;
+}
+
+input[type="search"] {
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 4px;
+  padding: 12px 20px 12px 50px;
+  background-image: url("icon.svg");
+  background-repeat: no-repeat;
+  background-position: 10px 10px;
+  background-size: 30px;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+p {
+  font-weight: 300;
+}
+
+input[type="submit"] {
+  background-color: green;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="reset"] {
+  background-color: darkred;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.row {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* CONFIGURAÇÃO FEITA PARA MOSTRAR NO CELULAR */
+
+/* A PARTIR DOS CSS CRIADO DENTRO DO MEDIA SCREEN, VOCE SEPARA TOTALMENTE O QUE VOCE
+FEZ NA VISUALIZAÇÃO DO PC PARA O CELULAR, POR EXEMPLO.
+
+O MEDIA SCREEN QUE FARÁ VOCE CONTROLAR E CRIAR TODA A RESPONSIVIDADE PARA OS DISPOSITIVOS
+SENDO ELES TABLET, PC, RELOGIO OU CELULAR 
+
+*/
+
+@media screen and (min-width: 300px) and (max-width: 1200px) {
+  input[type="submit"],
+  input[type="reset"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}

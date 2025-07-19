@@ -1,0 +1,16 @@
+/* posso colocar dessas 2 formas:
+
+de 0 a 1 ou de 0% a 50%
+
+neste exemplo os ambos vão aplicar 40% de opacidade tanto nas imagens,
+quando nos paragrafos.
+
+*/
+
+img {
+  opacity: 40%;
+}
+
+p {
+  opacity: 0.4;
+}

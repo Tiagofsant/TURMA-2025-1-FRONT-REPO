@@ -1,0 +1,39 @@
+/* Estilizo baseado na propriedade e valor, ou seja,
+todos os links que tiverem title="Vá para o google" serão afeados */
+
+a[title="Vá para o google"] {
+  background-color: green;
+  color: white;
+}
+
+/* Estilizo baseado na propriedade e valor, ou seja,
+todos os links que tiverem target="_blank" serão afeados */
+a[target="_blank"] {
+  background-color: yellow;
+}
+
+/* estilizo baseado na propriedade, ou seja, todos os links 
+/* que tiverem rel, serão afetados */
+a[rel] {
+  background-color: red;
+  color: white;
+}
+
+/* o ^="valor" significa que toda classe que tiver esse nome no 
+/* INICIO será afetado */
+[class^="top"] {
+  background-color: pink;
+}
+
+/* o *="valor" significa que toda classe que tiver esse nome no 
+/* EM ALGUM LUGAR DA CLASSE será afetado */
+[class*="contente"] {
+  background-color: palevioletred;
+}
+
+/* o *="valor" significa que toda classe que tiver esse nome no 
+/* EM ALGUM LUGAR DA CLASSE será afetado */
+[class*="down"] {
+  background-color: green;
+  color: white;
+}
