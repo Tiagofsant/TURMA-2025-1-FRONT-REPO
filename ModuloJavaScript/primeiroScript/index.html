@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Injetando Javascript</title>
+
+    <!-- script colocado no head - NAO RECOMENDADO -->
+    <script>
+      function mudarTexto1() {
+        document.getElementById("demostracao1").innerHTML =
+          "Deu certo, alterado pelo script 1";
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <p id="demostracao1">TEXTO PARA SER ALTERADO PELO SCRIPT 1</p>
+
+      <button onclick="mudarTexto1()">Mudar texto script 1</button>
+    </div>
+
+    <div>
+      <p id="demostracao2">TEXTO PARA SER ALTERADO PELO SCRIPT 2</p>
+
+      <button onclick="mudarTexto2()">Mudar texto script 2</button>
+
+      <!-- script colocado dentro do body - NAO RECOMENDADO -->
+      <script>
+        function mudarTexto2() {
+          document.getElementById("demostracao2").innerHTML =
+            "Deu certo, alterado pelo script 2";
+        }
+      </script>
+    </div>
+
+    <div>
+      <p id="demostracao3">TEXTO PARA SER ALTERADO PELO SCRIPT 3</p>
+
+      <button onclick="mudarTexto3()">Mudar texto script 3</button>
+    </div>
+
+    <div>
+      <p id="demostracao4">TEXTO PARA SER ALTERADO PELO SCRIPT 4</p>
+
+      <button onclick="mudarTexto4()">Mudar texto script 4</button>
+    </div>
+
+    <!-- script colocado de forma de link e com script em outro lugar - RECOMENDADO -->
+
+    <!-- links de scripts que vem de arquivo, pasta e arquivo e link externo respectivamente -->
+    <!-- arquivo local -->
+    <script src="script.js"></script>
+    <!-- arquivo local dentro de uma pasta -->
+    <script src="js/script-dentro-da-pasta.js"></script>
+    <!-- arquivo externo, site de terceiros -->
+    <script src="https://www.fullcodedev.com/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Amostragem de dados</title>
+  </head>
+  <body>
+    <p id="amostra">EXEMPLO DE AMOSTRAGEM</p>
+
+    <button onclick="mudarTextoComElementById()">
+      Mudar texto com getElementById
+    </button>
+
+    <button onclick="mudarTextoComDocumentWrite()">
+      Mudar texto com document.write()
+    </button>
+
+    <button onclick="mudaTextoComConsoleLog()">
+      Mudar texto com console.log
+    </button>
+
+    <button onclick="mudarTextoComAlert()">Mudar texto com alert()</button>
+
+    <button
+      onclick="console.log('Texto alterado com console.log --> direto no metodo')"
+    >
+      Mudar texto direto no metodo
+    </button>
+
+    <button onclick="imprimirPagina()">Imprime a página</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
